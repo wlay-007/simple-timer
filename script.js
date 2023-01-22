@@ -13,7 +13,7 @@ buttonStart.addEventListener('click', function(){
             seconds += 1;
             timeBox.innerText = seconds;
             buttonTest = false;
-        }, 100)
+        }, 1000)
     }
 })
 //stop button
