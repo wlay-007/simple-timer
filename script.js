@@ -9,7 +9,6 @@ let timerID;
 //start button
 buttonStart.addEventListener('click', function(){
     if(buttonTest){
-        window.navigator.vibrate(200);
         timerID = setInterval(function(){
             seconds += 1;
             timeBox.innerText = seconds;
@@ -19,13 +18,11 @@ buttonStart.addEventListener('click', function(){
 })
 //stop button
 buttonStop.addEventListener('click', function(){
-    window.navigator.vibrate(200);
     clearInterval(timerID);
     buttonTest = true;
 })
 // clear button
 buttonClear.addEventListener('click', function(){
-    window.navigator.vibrate(200);
     seconds = 0;
     clearInterval(timerID);
     timeBox.innerText = seconds;
